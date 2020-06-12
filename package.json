@@ -22,6 +22,11 @@
   },
   "build": {
     "appId": "com.my.app.id",
+    "publish": {
+      "provider": "github",
+      "owner": "moritamori",
+      "repo": "my-first-app"
+    },
     "directories": {
       "output": "dist"
     },
