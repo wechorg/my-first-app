@@ -2,9 +2,7 @@ name: 'release electron binaries for mac'
 on:
   push:
     branches:
-      - release
-    paths:
-      - "terraform/**"
+      - master
 jobs:
   release:
     runs-on: macos-latest
