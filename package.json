@@ -1,6 +1,6 @@
 {
   "name": "my-first-app",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "my-first-app",
   "author": "tamo",
   "main": "index.js",
@@ -22,6 +22,7 @@
   },
   "build": {
     "appId": "com.my.app.id",
+    "artifactName": "${productName}_installer_${version}.${ext}",
     "publish": {
       "provider": "github",
       "owner": "moritamori",
