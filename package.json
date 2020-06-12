@@ -1,16 +1,20 @@
 {
   "name": "my-first-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "my-first-app",
+  "author": "tamo",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "build:linux": "electron-builder --linux --dir",
     "dist:linux": "electron-builder --linux",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:mac": "electron-builder --mac --dir",
+    "dist:mac": "electron-builder --mac",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^9.0.0",
@@ -18,6 +22,9 @@
   },
   "build": {
     "appId": "com.my.app.id",
+    "directories": {
+      "output": "dist"
+    },
     "linux": {
       "category": "Utility"
     }
