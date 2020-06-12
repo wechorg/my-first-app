@@ -1,6 +1,6 @@
 {
   "name": "my-first-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "my-first-app",
   "author": "tamo",
   "main": "index.js",
@@ -25,7 +25,8 @@
     "publish": {
       "provider": "github",
       "owner": "moritamori",
-      "repo": "my-first-app"
+      "repo": "my-first-app",
+      "releaseType": "release"
     },
     "directories": {
       "output": "dist"

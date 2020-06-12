@@ -1,8 +1,9 @@
 name: 'release electron binaries for mac'
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
+
 jobs:
   release:
     runs-on: macos-latest
