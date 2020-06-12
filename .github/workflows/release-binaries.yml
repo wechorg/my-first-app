@@ -1,4 +1,4 @@
-name: 'release electron binaries for mac'
+name: 'build and release electron installer'
 on:
   push:
     tags:
