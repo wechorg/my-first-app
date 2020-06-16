@@ -13,6 +13,11 @@ jobs:
         os: [macos-latest, windows-latest]
 
     steps:
+      - name: Autocancel GitHub Actions workflows
+        uses: rokroskar/workflow-run-cleanup-action@v0.2.2
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Check out Git repository
         uses: actions/checkout@v1
 
